@@ -14,6 +14,7 @@ import { TransformationExplorerFull } from "./sections/TransformationExplorerWra
 import { EigenvectorRelationshipSection } from "./sections/EigenvectorRelationship";
 import { GeometricEigenvaluesSection } from "./sections/GeometricEigenvalues";
 import { PhysicsApplicationsSection } from "./sections/PhysicsApplications";
+import { SummarySection } from "./sections/Summary";
 
 /**
  * Eigenvalues Lesson
@@ -72,4 +73,9 @@ export const sections: ReactElement[] = [
     // SECTION 5: Physics Applications
     // ========================================
     <PhysicsApplicationsSection key="section-5-physics" />,
+
+    // ========================================
+    // SECTION 6: Summary & Key Takeaways
+    // ========================================
+    <SummarySection key="section-6-summary" />,
 ];
