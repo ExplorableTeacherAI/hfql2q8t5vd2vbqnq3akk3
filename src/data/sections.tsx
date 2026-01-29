@@ -11,6 +11,7 @@ useVariableStore.getState().initialize(getDefaultValues());
 // Import section components
 import { EigenvaluesIntroContent, EigenvaluesIntroViz } from "./sections/EigenvaluesIntro";
 import { TransformationExplorerFull } from "./sections/TransformationExplorerWrapper";
+import { EigenvectorRelationshipSection } from "./sections/EigenvectorRelationship";
 
 /**
  * Eigenvalues Lesson
@@ -54,4 +55,9 @@ export const sections: ReactElement[] = [
     // SECTION 2: Visualizing Transformations
     // ========================================
     <TransformationExplorerFull key="section-2-transform" />,
+
+    // ========================================
+    // SECTION 3: The Eigenvector and Eigenvalue Relationship
+    // ========================================
+    <EigenvectorRelationshipSection key="section-3-relationship" />,
 ];
