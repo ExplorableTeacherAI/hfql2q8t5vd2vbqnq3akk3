@@ -12,6 +12,7 @@ useVariableStore.getState().initialize(getDefaultValues());
 import { EigenvaluesIntroContent, EigenvaluesIntroViz } from "./sections/EigenvaluesIntro";
 import { TransformationExplorerFull } from "./sections/TransformationExplorerWrapper";
 import { EigenvectorRelationshipSection } from "./sections/EigenvectorRelationship";
+import { GeometricEigenvaluesSection } from "./sections/GeometricEigenvalues";
 
 /**
  * Eigenvalues Lesson
@@ -60,4 +61,9 @@ export const sections: ReactElement[] = [
     // SECTION 3: The Eigenvector and Eigenvalue Relationship
     // ========================================
     <EigenvectorRelationshipSection key="section-3-relationship" />,
+
+    // ========================================
+    // SECTION 4: Finding Eigenvalues Geometrically
+    // ========================================
+    <GeometricEigenvaluesSection key="section-4-geometric" />,
 ];
