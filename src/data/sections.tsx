@@ -10,6 +10,7 @@ useVariableStore.getState().initialize(getDefaultValues());
 
 // Import section components
 import { EigenvaluesIntroContent, EigenvaluesIntroViz } from "./sections/EigenvaluesIntro";
+import { TransformationExplorerFull } from "./sections/TransformationExplorerWrapper";
 
 /**
  * Eigenvalues Lesson
@@ -48,4 +49,9 @@ export const sections: ReactElement[] = [
             <EigenvaluesIntroViz />
         </Section>
     </SplitLayout>,
+
+    // ========================================
+    // SECTION 2: Visualizing Transformations
+    // ========================================
+    <TransformationExplorerFull key="section-2-transform" />,
 ];
