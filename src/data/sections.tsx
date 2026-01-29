@@ -13,6 +13,7 @@ import { EigenvaluesIntroContent, EigenvaluesIntroViz } from "./sections/Eigenva
 import { TransformationExplorerFull } from "./sections/TransformationExplorerWrapper";
 import { EigenvectorRelationshipSection } from "./sections/EigenvectorRelationship";
 import { GeometricEigenvaluesSection } from "./sections/GeometricEigenvalues";
+import { PhysicsApplicationsSection } from "./sections/PhysicsApplications";
 
 /**
  * Eigenvalues Lesson
@@ -66,4 +67,9 @@ export const sections: ReactElement[] = [
     // SECTION 4: Finding Eigenvalues Geometrically
     // ========================================
     <GeometricEigenvaluesSection key="section-4-geometric" />,
+
+    // ========================================
+    // SECTION 5: Physics Applications
+    // ========================================
+    <PhysicsApplicationsSection key="section-5-physics" />,
 ];
